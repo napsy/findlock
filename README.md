@@ -14,7 +14,7 @@ DETECTED 2 POSSIBLE DEADLOCK(S)
   ├ 1: sync.(*Mutex).lockSlow                   @ /usr/local/go/src/sync/mutex.go:138
   ├ 2: sync.(*Mutex).Lock                       @ /usr/local/go/src/sync/mutex.go:81
   ├ 3: main.clientDatabaseChange                @ /tmp/projects/go/src/proj1/cmd/runner/database-changes.go:22
-  ├ 4: main.refresh                             @ /tmp/projects/go/src/proj1/cmd/runnder/sync.go:53
+  ├ 4: main.refresh                             @ /tmp/projects/go/src/proj1/cmd/runner/sync.go:53
   ├ 5: proj1/pkg/db.(*PostgresDB).HandleChanges @ /tmp/projects/go/src/proj1/pkg/db/postgresql.go:271
   └ 6: main.initOrDie.func2                     @ /tmp/projects/go/src/proj1/cmd/runner/sync.go:111
 - 1 call(s) to Lock() for 0xc0003b2028, 1 unique:
